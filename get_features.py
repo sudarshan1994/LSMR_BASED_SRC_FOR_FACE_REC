@@ -2,15 +2,15 @@ import operator
 import sys, os
 sys.path.append("../..")
 # import facerec modules
-from facerec.feature import PCA as pca
-from facerec.feature import Fisherfaces
-from facerec.feature import SpatialHistogram as sh
-from facerec.distance import EuclideanDistance
-from facerec.classifier import NearestNeighbor
-from facerec.model import PredictableModel
-from facerec.validation import KFoldCrossValidation
-from facerec.visual import subplot
-from facerec.util import minmax_normalize
+#from facerec.feature import PCA as pca
+#from facerec.feature import Fisherfaces
+#from facerec.feature import SpatialHistogram as sh
+#from facerec.distance import EuclideanDistance
+#from facerec.classifier import NearestNeighbor
+#from facerec.model import PredictableModel
+#from facerec.validation import KFoldCrossValidation
+#from facerec.visual import subplot
+#from facerec.util import minmax_normalize
 # import numpy, matplotlib and logging
 import numpy as np
 from PIL import Image
