@@ -38,8 +38,6 @@ def controller(train_matrix, test_matrix, labels):
     #labels = [j for j in range(15) for i in range(8)]
     normalized_train_matrix = train_matrix #normalize_data(train_matrix)
     normalized_test_matrix = test_matrix #norbmalize_data(test_matrix)
-    print(normalized_test_matrix.shape)
-    print(normalized_test_matrix.T.shape)
     '''
     print(normalized_train_matrix.shape)
     print(normalized_test_matrix.shape)
@@ -60,7 +58,7 @@ def controller(train_matrix, test_matrix, labels):
             predicted_label, residual =lsmr_sparse_representaion_classifier( normalized_train_matrix, test_vector.T, labels )
             predicted_class.append(predicted_label)
             print(residual)
-    print("yhe label is ")
+    print("the person is ")
     print(predicted_class)
     return predicted_class
 
@@ -73,10 +71,6 @@ def main():
     test_labels = json.loads(json_data)
     result = controller(train_matrix, test_matrix, train_labels)
     matches = [i for i, j in zip(result, test_labels) if i == j]
-    print(result)
-    print(test_labels)
-    print(len(test_labels))
-    print(len(matches))
 if __name__ == '__main__':     
     main()
     
