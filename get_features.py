@@ -13,9 +13,9 @@ sys.path.append("../..")
 #from facerec.util import minmax_normalize
 # import numpy, matplotlib and logging
 import numpy as np
-from PIL import Image
-import matplotlib.cm as cm
-import logging
+#from PIL import Image
+#import matplotlib.cm as cm
+#import logging
 
 import os
 import pickle
